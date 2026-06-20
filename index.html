@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamil Nadu Catering Services</title>
+  <meta name="description" content="Authentic Tamil Nadu culinary feasts, traditional tiffin, and elegant catering setups for Kalyanam, Grahapravesam, and Ghee-roast spreads. Pure catering services.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 3D Background Canvas -->
+  <canvas id="webgl-background"></canvas>
+  <div class="ambient-overlay"></div>
+
+  <!-- Header Navigation -->
+  <header id="header">
+    <a href="#home" class="logo">TAMILNADU<span>Catering</span></a>
+    
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-btn">
+      <a href="#contact" class="btn btn-secondary" style="padding: 0.6rem 1.5rem; font-size: 0.8rem;">Book tasting</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="hero-content">
+      <p class="hero-subtitle gold-text">விருந்தோம்பல் போற்றுவோம் • Virundhombal Potruvom</p>
+      <h1 class="hero-title">அன்போடு பரிமாறுவோம்<br><span class="gold-text">Served With Love & Tradition</span></h1>
+      <p class="hero-description" style="font-style: italic; margin-bottom: 2rem;">"உணவே மருந்து, மருந்தே உணவு" (Food is medicine, Medicine is food)</p>
+      <p class="hero-description">Welcome to Tamilnadu Catering Service. We bring the rich heritage of authentic South Indian cuisine, traditional flavors, and warm hospitality to your celebrations.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">Explore Menu</a>
+        <a href="#contact" class="btn btn-secondary">Inquire Now</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">
+      Scroll Down
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-img-container">
+        <!-- Local generated about chef image -->
+        <img src="assets/about_chef.png" alt="Aura Chef plating a dish" class="about-img">
+        <div class="about-img-overlay"></div>
+        <div class="experience-badge glass-container">
+          <span class="experience-years">15+</span>
+          <span class="experience-text">Years of Grand Feasts</span>
+        </div>
+      </div>
+      
+      <div class="about-text">
+        <p class="gold-text" style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 600;">Our Philosophy</p>
+        <h3>Traditional Tamil Nadu Catering & Premium Food Styling</h3>
+        <p>At Aura, we believe that catering is not just about serving food; it's about honoring our heritage and crafting an immersive sensory dining experience. We combine rich Tamil Nadu culinary traditions, custom-blended masalas, and elegant food presentations.</p>
+        <p><strong>Note: We are professional culinary and catering specialists only. We focus entirely on preparing and serving the perfect feast—we do not handle general event organizing or venue decor.</strong> Our master chefs and serving staff collaborate to make your family feast smooth, hygienic, and memorable.</p>
+        
+        <div class="about-features">
+          <div class="about-feature-item">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Pure & Fresh Ingredients</span>
+          </div>
+          <div class="about-feature-item">
+            <i class="fa-solid fa-mortar-pestle"></i>
+            <span>Traditional Masala Blends</span>
+          </div>
+          <div class="about-feature-item">
+            <i class="fa-solid fa-award"></i>
+            <span>Catering Master Chefs</span>
+          </div>
+          <div class="about-feature-item">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>Aesthetic Banana Leaf & Buffet setups</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Catering Offerings</h2>
+    <div class="services-grid">
+      
+      <div class="service-card glass-container">
+        <div class="service-icon"><i class="fa-solid fa-glass-water"></i></div>
+        <h3>Kalyana Virundhu (Wedding Feast)</h3>
+        <p>Grand traditional banana leaf (Elai Saapaadu) dining or modern reception buffet layouts. We manage the entire cooking, plating, and serving process with pure culinary expertise.</p>
+      </div>
+
+      <div class="service-card glass-container">
+        <div class="service-icon"><i class="fa-solid fa-gift"></i></div>
+        <h3>Pirantha Naal & Family Functions</h3>
+        <p>Delicious birthday (Pirantha Naal) and ear-piercing (Kaadhani Vizha) catering, complete with live hot dosa counters, chat counters, and traditional coffee counters.</p>
+      </div>
+
+      <div class="service-card glass-container">
+        <div class="service-icon"><i class="fa-solid fa-house-chimney-user"></i></div>
+        <h3>Grahapravesam (Housewarming)</h3>
+        <p>Punctual, hygienic, and pure vegetarian breakfast (tiffin) and traditional lunch spreads prepared with fresh ingredients to bless your new home.</p>
+      </div>
+
+      <div class="service-card glass-container">
+        <div class="service-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Valaikaappu & Custom Feasts</h3>
+        <p>Specialized variety rice selections (Chithra Annam) for baby showers, betrothals, and intimate home family gatherings, prepared to traditional perfection.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Curated Menu Preview</h2>
+    
+    <div class="menu-tabs">
+      <button class="tab-btn active" data-tab="appetizers">Appetizers</button>
+      <button class="tab-btn" data-tab="mains">Main Courses</button>
+      <button class="tab-btn" data-tab="desserts">Desserts</button>
+      <button class="tab-btn" data-tab="beverages">Beverages</button>
+    </div>
+
+    <!-- Appetizers Grid -->
+    <div class="menu-grid tab-content active" id="appetizers">
+      
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=500&auto=format&fit=crop&q=80" alt="Cocktail Idli Podi" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Ghee Podi Mini Idli</h3>
+          </div>
+          <p class="menu-item-desc">Mini steamed rice cakes tossed in aromatic spiced lentil powder (podi) and hot cow ghee.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&auto=format&fit=crop&q=80" alt="Ghee Roast Paneer Bites" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Paneer Ghee Roast</h3>
+          </div>
+          <p class="menu-item-desc">Succulent cottage cheese cubes tossed in a fiery, slow-roasted Mangalorean spices and ghee paste.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d90ef8?w=500&auto=format&fit=crop&q=80" alt="Kozhi Kempu" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Crispy Chicken Fry (Kozhi Kempu)</h3>
+          </div>
+          <p class="menu-item-desc">Crispy golden chicken strips stir-fried with green chilies, garlic, yogurt, and fresh curry leaves.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop&q=80" alt="Beetroot Cutlet" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Beetroot Cutlet</h3>
+          </div>
+          <p class="menu-item-desc">Pan-fried spiced beetroot patties served with aromatic mint and fresh coconut chutney.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mains Grid -->
+    <div class="menu-grid tab-content" id="mains" style="display: none;">
+      
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1626132647523-66f5bf380027?w=500&auto=format&fit=crop&q=80" alt="Malabar Parotta Kurma" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Malabar Parotta with Veg Kurma</h3>
+          </div>
+          <p class="menu-item-desc">Multi-layered flaky flatbread served with a creamy coconut vegetable kurma simmered with fennel.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?w=500&auto=format&fit=crop&q=80" alt="Chettinad Chicken Masala" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Chettinad Chicken Gravy</h3>
+          </div>
+          <p class="menu-item-desc">Tender chicken slow-cooked in roasted coriander, black pepper, and toasted coconut Chettinad spices.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&auto=format&fit=crop&q=80" alt="Nellore Fish Curry" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Nellore Fish Curry</h3>
+          </div>
+          <p class="menu-item-desc">Tangy sea bass fillets simmered in tamarind pulp, raw mango slices, and red chilies, served with red rice.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=500&auto=format&fit=crop&q=80" alt="Jackfruit Biryani" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Vegetable Dum Biryani</h3>
+          </div>
+          <p class="menu-item-desc">Fragrant basmati rice layered with spiced fresh vegetables and saffron, cooked on slow dum.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Desserts Grid -->
+    <div class="menu-grid tab-content" id="desserts" style="display: none;">
+      
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=500&auto=format&fit=crop&q=80" alt="Elaneer Payasam" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Elaneer Payasam (Tender Coconut Kheer)</h3>
+          </div>
+          <p class="menu-item-desc">A chilled, delicate dessert made of tender coconut pulp, coconut milk, and sweetened cardamon milk.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=500&auto=format&fit=crop&q=80" alt="Ghee Mysore Pak" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Ghee Mysore Pak</h3>
+          </div>
+          <p class="menu-item-desc">Rich, crumbly and melt-in-the-mouth sweet fudge prepared from gram flour, sugar, and pure cow ghee.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=500&auto=format&fit=crop&q=80" alt="Rava Kesari" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Rava Kesari (Saffron Sweet)</h3>
+          </div>
+          <p class="menu-item-desc">Sweet semolina pudding cooked with real saffron threads, cardamom, and loaded with roasted cashew nuts.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&auto=format&fit=crop&q=80" alt="Coffee Panna Cotta" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Filter Coffee Pudding</h3>
+          </div>
+          <p class="menu-item-desc">Modern Italian infusion blending silky cooked cream with bold, aromatic South Indian chicory filter coffee.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Beverages Grid -->
+    <div class="menu-grid tab-content" id="beverages" style="display: none;">
+      
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500&auto=format&fit=crop&q=80" alt="Filter Coffee" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Madras Filter Coffee</h3>
+          </div>
+          <p class="menu-item-desc">Traditional chicory-blended coffee frothed with hot milk in a classic brass dabarah and tumbler.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&auto=format&fit=crop&q=80" alt="Neer Mor" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Spiced Buttermilk (Neer Mor)</h3>
+          </div>
+          <p class="menu-item-desc">Refreshing cold yogurt buttermilk seasoned with ginger, green chilies, curry leaves, and coriander.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=500&auto=format&fit=crop&q=80" alt="Panakam" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Jaggery Lemon Drink (Panakam)</h3>
+          </div>
+          <p class="menu-item-desc">Classic elixir of pure jaggery water flavored with lime juice, dry ginger powder, and cardamoms.</p>
+        </div>
+      </div>
+
+      <div class="menu-item glass-container">
+        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500&auto=format&fit=crop&q=80" alt="Vasantha Neer" class="menu-item-img">
+        <div class="menu-item-info">
+          <div class="menu-item-header">
+            <h3>Tender Coconut Mint Drink (Vasantha Neer)</h3>
+          </div>
+          <p class="menu-item-desc">Fresh tender coconut water blended with wildflower honey, freshly squeezed lime, and crushed mint.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Feast Displays & Gallery</h2>
+    
+    <div class="gallery-filters">
+      <button class="tab-btn active" data-filter="all">All Photos</button>
+      <button class="tab-btn" data-filter="kalyanam">Kalyanam Feasts</button>
+      <button class="tab-btn" data-filter="tiffin">Tiffin & Leaf Service</button>
+      <button class="tab-btn" data-filter="sweets">Sweets & Snacks</button>
+    </div>
+
+    <div class="gallery-grid">
+      
+      <div class="gallery-item wide" data-category="kalyanam">
+        <!-- Local generated wedding table image -->
+        <img src="assets/gallery_wed1.png" alt="Elegant wedding dining table layout">
+        <div class="gallery-overlay">
+          <h3>Grand Kalyana Layouts</h3>
+          <p>Wedding Buffet Catering</p>
+        </div>
+      </div>
+
+      <div class="gallery-item tall" data-category="tiffin">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&auto=format&fit=crop&q=80" alt="Authentic Elai Saapaadu">
+        <div class="gallery-overlay">
+          <h3>Traditional Elai Saapaadu</h3>
+          <p>Traditional Banana Leaf Lunch</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="sweets">
+        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600&auto=format&fit=crop&q=80" alt="Ghee Mysore Pak platters">
+        <div class="gallery-overlay">
+          <h3>Festival Sweet Plating</h3>
+          <p>Ghee Mysore Pak & Halwa Stalls</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="kalyanam">
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=600&auto=format&fit=crop&q=80" alt="Bespoke drink stalls">
+        <div class="gallery-overlay">
+          <h3>Filter Coffee Counters</h3>
+          <p>Traditional Dabarah Service</p>
+        </div>
+      </div>
+
+      <div class="gallery-item tall" data-category="tiffin">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&auto=format&fit=crop&q=80" alt="Live Dosa Stations">
+        <div class="gallery-overlay">
+          <h3>Live Crispy Dosa Stations</h3>
+          <p>On-site Hot Tiffin Catering</p>
+        </div>
+      </div>
+
+      <div class="gallery-item wide" data-category="sweets">
+        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800&auto=format&fit=crop&q=80" alt="South Indian Sweets">
+        <div class="gallery-overlay">
+          <h3>Traditional Payasam Stalls</h3>
+          <p>Elaneer Payasam & Kesari Displays</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="kalyanam">
+        <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=600&auto=format&fit=crop&q=80" alt="Premium buffet tablescapes">
+        <div class="gallery-overlay">
+          <h3>Aesthetic Buffet Setups</h3>
+          <p>Premium Wedding Feast Styling</p>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-category="tiffin">
+        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?w=600&auto=format&fit=crop&q=80" alt="Traditional Tiffin display">
+        <div class="gallery-overlay">
+          <h3>Morning Tiffin Buffets</h3>
+          <p>Idli, Pongal, and Medhu Vadai spreads</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Gallery -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img src="" alt="Zoomed view" class="lightbox-content" id="lightbox-img">
+  </div>
+
+  <!-- Reviews Section -->
+  <section id="reviews">
+    <h2>Client Testimonials</h2>
+    
+    <div class="reviews-container glass-container">
+      <div class="review-slider">
+        
+        <div class="review-card active" data-index="0">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote class="review-text">
+            "Aura Catering made our daughter's Kalyanam feast absolutely unforgettable. The traditional banana leaf lunch (Elai Saapaadu) was authentic, piping hot, and served with great respect. Guests are still praising the Elaneer Payasam!"
+          </blockquote>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80" alt="Anand & Priya" class="review-author-img">
+            <div class="review-author-info">
+              <div class="review-author-name">Anand & Priya R.</div>
+              <div class="review-author-role">Kalyanam Clients (Chennai)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-index="1">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote class="review-text">
+            "We booked Aura for our son's Pirantha Naal (first birthday) and the food counters were spectacular. The live dosa counter was a huge hit among kids and adults. Clean, quick, and highly professional catering services."
+          </blockquote>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80" alt="Senthil Kumar" class="review-author-img">
+            <div class="review-author-info">
+              <div class="review-author-name">Senthil Kumar</div>
+              <div class="review-author-role">Birthday Party Host (Madurai)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-index="2">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote class="review-text">
+            "For our Grahapravesam, we wanted pure vegetarian traditional catering. Aura delivered flawless morning tiffin and lunch. The filter coffee counter was setup beautifully. They worked closely with our own decor team."
+          </blockquote>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&auto=format&fit=crop&q=80" alt="Meenakshi Sundaram" class="review-author-img">
+            <div class="review-author-info">
+              <div class="review-author-name">Meenakshi Sundaram</div>
+              <div class="review-author-role">Housewarming Host (Coimbatore)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="review-nav">
+        <button class="review-btn" id="prev-review"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="review-btn" id="next-review"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Booking Section -->
+  <section id="contact">
+    <div class="contact-grid">
+      
+      <div class="contact-info glass-container">
+        <p class="gold-text" style="text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem; margin-bottom: 0.5rem; font-weight: 600;">Reach Us</p>
+        <h3>Let's Create Something Memorable</h3>
+        <p>Whether you're planning an intimate tasting dinner or a large-scale wedding banquet, we would love to hear your vision and share how we can elevate your celebration.</p>
+        
+        <div class="contact-details">
+          
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Direct Call</h4>
+              <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email Inquiries</h4>
+              <p><a href="mailto:bookings@auracatering.com">bookings@auracatering.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Headquarters</h4>
+              <p>124 Luxury Lane, Suite A<br>Beverly Hills, CA 90210</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="contact-form-container glass-container">
+        <h3>Book A Consultation</h3>
+        <form id="catering-form">
+          <div class="form-grid">
+            
+            <div class="form-group">
+              <label for="fullname">Full Name *</label>
+              <input type="text" id="fullname" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" placeholder="john@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required>
+            </div>
+
+            <div class="form-group">
+              <label for="event-type">Event Type</label>
+              <select id="event-type">
+                <option value="kalyanam">Kalyanam (Wedding Feast)</option>
+                <option value="piranthanaal">Pirantha Naal (Birthday Celebration)</option>
+                <option value="grahapravesam">Grahapravesam (Housewarming)</option>
+                <option value="valaikaappu">Valaikaappu (Baby Shower)</option>
+                <option value="other">Other Tamil Nadu Feast Catering</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Expected Guests *</label>
+              <input type="number" id="guests" min="1" placeholder="e.g. 150" required>
+            </div>
+
+            <div class="form-group">
+              <label for="event-date">Desired Date *</label>
+              <input type="date" id="event-date" required>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Dietary Preferences or Special Vision</label>
+              <textarea id="message" rows="4" placeholder="Tell us about your theme, culinary preferences, or specific layout visions..."></textarea>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit-btn">Send Inquiry Details</button>
+          
+          <div class="form-message" id="form-msg">
+            Thank you! Your catering inquiry has been sent. Our team will contact you within 24 hours.
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <a href="#home" class="footer-logo">TAMILNADU<span>Catering Service</span></a>
+    
+    <div class="footer-socials">
+      <a href="https://instagram.com" class="social-link" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://facebook.com" class="social-link" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+
+    <p class="footer-copyright">&copy; 2026 Tamilnadu Catering Service. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Floating Mobile/Quick booking Buttons -->
+  <div class="floating-actions">
+    <!-- WhatsApp Chat Link -->
+    <a href="https://wa.me/15551234567?text=Hi%20Aura%20Catering,%20I'd%20like%20to%20inquire%20about%20your%20services!" class="float-btn float-whatsapp" target="_blank" aria-label="Book on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    
+    <!-- Phone Call Link -->
+    <a href="tel:+15551234567" class="float-btn float-call" aria-label="Call Us Now">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- Load Three.js Library CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  
+  <!-- Custom JS Operations -->
+  <script src="script.js"></script>
+</body>
+</html>
